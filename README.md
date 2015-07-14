@@ -1,5 +1,7 @@
 # marathon
 
+[![Join the chat at https://gitter.im/mesoscloud/marathon](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mesoscloud/marathon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Marathon is a Mesos framework for long-running applications.
 
 ## centos
