@@ -1,0 +1,11 @@
+- build: 0.8.2/centos/7
+  image:
+    - mesoscloud/marathon:0.8.2-centos-7
+    - mesoscloud/marathon:0.8.2-centos
+    - mesoscloud/marathon:0.8.2
+    - mesoscloud/marathon:latest
+    
+- build: 0.8.2/ubuntu/14.04
+  image:
+    - mesoscloud/marathon:0.8.2-ubuntu-14.04
+    - mesoscloud/marathon:0.8.2-ubuntu
