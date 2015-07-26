@@ -2,24 +2,38 @@
 
 [![Join the chat at https://gitter.im/mesoscloud/marathon](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mesoscloud/marathon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Marathon is a Mesos framework for long-running applications.
+Marathon
 
-## centos
+https://mesosphere.github.io/marathon/
 
-[![](https://badge.imagelayers.io/mesoscloud/marathon:0.8.2-centos-7.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.8.2-centos-7)
+## CentOS
 
-Usage example:
+[![](https://badge.imagelayers.io/mesoscloud/marathon:0.9.0-centos-7.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.9.0-centos-7)
+
+e.g.
 
 ```
-docker run -d \
--e MARATHON_MASTER=zk://master-1:2181,master-2:2181,master-3:2181/mesos \
--e MARATHON_HOSTNAME=10.0.0.123 \
--e MARATHON_HTTP_ADDRESS=10.0.0.123 \
--e MARATHON_HTTPS_ADDRESS=10.0.0.123 \
--e MARATHON_ZK=zk://master-1:2181,master-2:2181,master-3:2181/marathon \
---name marathon --net host --restart always mesoscloud/marathon:0.8.2-centos-7
+docker run -d
+-e MARATHON_HOSTNAME=ip.address
+-e MARATHON_HTTPS_ADDRESS=ip.address
+-e MARATHON_HTTP_ADDRESS=ip.address
+-e MARATHON_MASTER=zk://node-1:2181,node-2:2181,node-3:2181/mesos
+-e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon
+--name marathon --net host --restart always mesoscloud/marathon:0.9.0-centos-7
 ```
 
-## ubuntu
+## Ubuntu
 
-[![](https://badge.imagelayers.io/mesoscloud/marathon:0.8.2-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.8.2-ubuntu-14.04)
+[![](https://badge.imagelayers.io/mesoscloud/marathon:0.9.0-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.9.0-ubuntu-14.04)
+
+e.g.
+
+```
+docker run -d
+-e MARATHON_HOSTNAME=ip.address
+-e MARATHON_HTTPS_ADDRESS=ip.address
+-e MARATHON_HTTP_ADDRESS=ip.address
+-e MARATHON_MASTER=zk://node-1:2181,node-2:2181,node-3:2181/mesos
+-e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon
+--name marathon --net host --restart always mesoscloud/marathon:0.9.0-ubuntu-14.04
+```
