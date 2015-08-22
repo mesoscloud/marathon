@@ -8,32 +8,32 @@ https://mesosphere.github.io/marathon/
 
 ## CentOS
 
-[![](https://badge.imagelayers.io/mesoscloud/marathon:0.9.0-centos-7.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.9.0-centos-7)
+[![](https://badge.imagelayers.io/mesoscloud/marathon:0.10.0-centos-7.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.10.0-centos-7)
 
 e.g.
 
 ```
-docker run -d
--e MARATHON_HOSTNAME=ip.address
--e MARATHON_HTTPS_ADDRESS=ip.address
--e MARATHON_HTTP_ADDRESS=ip.address
--e MARATHON_MASTER=zk://node-1:2181,node-2:2181,node-3:2181/mesos
--e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon
---name marathon --net host --restart always mesoscloud/marathon:0.9.0-centos-7
+docker run -d \
+-e MARATHON_HOSTNAME=ip.address \
+-e MARATHON_HTTPS_ADDRESS=ip.address \
+-e MARATHON_HTTP_ADDRESS=ip.address \
+-e MARATHON_MASTER=zk://node-1:2181,node-2:2181,node-3:2181/mesos \
+-e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon \
+--name marathon --net host --restart always mesoscloud/marathon:0.10.0-centos-7
 ```
 
 ## Ubuntu
 
-[![](https://badge.imagelayers.io/mesoscloud/marathon:0.9.0-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.9.0-ubuntu-14.04)
+[![](https://badge.imagelayers.io/mesoscloud/marathon:0.10.0-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.10.0-ubuntu-14.04)
 
 e.g.
 
 ```
-docker run -d
--e MARATHON_HOSTNAME=ip.address
--e MARATHON_HTTPS_ADDRESS=ip.address
--e MARATHON_HTTP_ADDRESS=ip.address
--e MARATHON_MASTER=zk://node-1:2181,node-2:2181,node-3:2181/mesos
--e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon
---name marathon --net host --restart always mesoscloud/marathon:0.9.0-ubuntu-14.04
+docker run -d \
+-e MARATHON_HOSTNAME=ip.address \
+-e MARATHON_HTTPS_ADDRESS=ip.address \
+-e MARATHON_HTTP_ADDRESS=ip.address \
+-e MARATHON_MASTER=zk://node-1:2181,node-2:2181,node-3:2181/mesos \
+-e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon \
+--name marathon --net host --restart always mesoscloud/marathon:0.10.0-ubuntu-14.04
 ```
