@@ -8,3 +8,7 @@ apt-get update && \
 apt-get -y install marathon=0.10.0-1.0.409.ubuntu1404 mesos=0.22.1-1.0.ubuntu1404
 
 CMD ["marathon", "--no-logger"]
+
+COPY entrypoint.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]

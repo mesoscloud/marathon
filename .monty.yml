@@ -24,3 +24,9 @@
 
 - tests:
     - cmd: marathon -h 2> /dev/null | grep 'USAGE.*marathon'
+
+    - cmd: test -z "$MARATHON_MESOS_AUTHENTICATION_SECRET_FILE"
+
+    - cmd: test -n "$MARATHON_MESOS_AUTHENTICATION_SECRET_FILE"
+      env:
+        - SECRET=password

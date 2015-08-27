@@ -22,6 +22,8 @@ docker run -d \
 --name marathon --net host --restart always mesoscloud/marathon:0.10.0-centos-7
 ```
 
+Set environment variable `SECRET` to enable framework authentication.
+
 ## Ubuntu
 
 [![](https://badge.imagelayers.io/mesoscloud/marathon:0.10.0-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/marathon:0.10.0-ubuntu-14.04)
@@ -37,3 +39,5 @@ docker run -d \
 -e MARATHON_ZK=zk://node-1:2181,node-2:2181,node-3:2181/marathon \
 --name marathon --net host --restart always mesoscloud/marathon:0.10.0-ubuntu-14.04
 ```
+
+Set environment variable `SECRET` to enable framework authentication.
