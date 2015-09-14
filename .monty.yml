@@ -1,9 +1,20 @@
+- build: 0.10.1/centos/7
+  image:
+    - mesoscloud/marathon:0.10.1-centos-7
+    - mesoscloud/marathon:0.10.1-centos
+    - mesoscloud/marathon:0.10.1
+    - mesoscloud/marathon:latest
+
+- build: 0.10.1/ubuntu/14.04
+  image:
+    - mesoscloud/marathon:0.10.1-ubuntu-14.04
+    - mesoscloud/marathon:0.10.1-ubuntu
+
 - build: 0.10.0/centos/7
   image:
     - mesoscloud/marathon:0.10.0-centos-7
     - mesoscloud/marathon:0.10.0-centos
     - mesoscloud/marathon:0.10.0
-    - mesoscloud/marathon:latest
 
 - build: 0.10.0/ubuntu/14.04
   image:
