@@ -1,9 +1,31 @@
+- build: 0.13.0/centos/7
+  image:
+    - mesoscloud/marathon:0.13.0-centos-7
+    - mesoscloud/marathon:0.13.0-centos
+    - mesoscloud/marathon:0.13.0
+    - mesoscloud/marathon:latest
+
+- build: 0.13.0/ubuntu/15.04
+  image:
+    - mesoscloud/marathon:0.13.0-ubuntu-15.04
+    - mesoscloud/marathon:0.13.0-ubuntu
+
+- build: 0.11.1/centos/7
+  image:
+    - mesoscloud/marathon:0.11.1-centos-7
+    - mesoscloud/marathon:0.11.1-centos
+    - mesoscloud/marathon:0.11.1
+
+- build: 0.11.1/ubuntu/15.04
+  image:
+    - mesoscloud/marathon:0.11.1-ubuntu-15.04
+    - mesoscloud/marathon:0.11.1-ubuntu
+
 - build: 0.11.0/centos/7
   image:
     - mesoscloud/marathon:0.11.0-centos-7
     - mesoscloud/marathon:0.11.0-centos
     - mesoscloud/marathon:0.11.0
-    - mesoscloud/marathon:latest
 
 - build: 0.11.0/ubuntu/15.04
   image:
