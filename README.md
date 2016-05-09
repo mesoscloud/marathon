@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/mesoscloud/marathon.svg?branch=master)](https://travis-ci.org/mesoscloud/marathon)
-[![Docker Stars](https://img.shields.io/docker/stars/mesoscloud/marathon.svg)](https://hub.docker.com/r/mesoscloud/marathon/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/mesoscloud/marathon.svg)](https://hub.docker.com/r/mesoscloud/marathon/)
+[![Build Status](https://travis-ci.org/mesoscloud/marathon.svg?branch=master)](https://travis-ci.org/mesoscloud/marathon) [![Docker Stars](https://img.shields.io/docker/stars/mesoscloud/marathon.svg)](https://hub.docker.com/r/mesoscloud/marathon/) [![Docker Pulls](https://img.shields.io/docker/pulls/mesoscloud/marathon.svg)](https://hub.docker.com/r/mesoscloud/marathon/)
 
 # marathon
 
